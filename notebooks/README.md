@@ -3,9 +3,11 @@
 ## Overview
 
 This project consists of several Jupyter notebooks designed for different purposes:
-1. `gnews_scraper.ipynb`: Scrapes news articles using Google News.
+1. `GNewsScraper.ipynb`: Scrapes news articles using Google News.
 2. `NLPEventClassification.ipynb`: Classifies events based on their descriptions using NLP techniques.
-3. `text_helper.ipynb`: Provides helper functions for text processing tasks.
+3. `SEC10KDocumentScraper.ipynb`: Scrapes and processes 10-K documents from the SEC.
+4. `TextUtility.ipynb`: Provides various text processing utilities.
+5. `README.md`: Project documentation.
 
 ## Requirements
 
@@ -21,12 +23,6 @@ This project consists of several Jupyter notebooks designed for different purpos
   - `torch`
 
 ## Installation
-
-<!-- 1. Clone the repository:
-    ```
-    git clone https://github.com/your-username/your-repo.git
-    cd your-repo
-    ``` -->
 
 1. **Optional:** Set up a virtual environment:
     ```
@@ -47,13 +43,14 @@ This project consists of several Jupyter notebooks designed for different purpos
     ```
 
 2. Open the desired notebook:
-    - `gnews_scraper.ipynb`
+    - `GNewsScraper.ipynb`
     - `NLPEventClassification.ipynb`
-    - `text_helper.ipynb`
+    - `SEC10KDocumentScraper.ipynb`
+    - `TextUtility.ipynb`
 
 3. Run the cells in the notebook to execute the code.
 
-### gnews_scraper.ipynb
+### GNewsScraper.ipynb
 
 This notebook is designed to scrape news articles from Google News. It performs the following tasks:
 - Searches Google News for articles based on a user-defined query.
@@ -68,9 +65,16 @@ This notebook focuses on classifying events based on their descriptions using Na
 - Implements advanced NLP models from the Hugging Face Transformers library to classify events.
 - Evaluates model performance and provides visualizations of the classification results.
 
-### text_helper.ipynb
+### SEC10KDocumentScraper.ipynb
 
-This notebook provides various helper functions for text processing tasks. It includes:
+This notebook is designed to scrape and process 10-K documents from the SEC. It performs the following tasks:
+- Searches the SEC EDGAR database for 10-K filings based on a user-defined query.
+- Extracts and processes the text of the 10-K documents.
+- Analyzes the text data to extract relevant financial information.
+
+### TextUtility.ipynb
+
+This notebook provides various text processing utilities. It includes:
 - Functions for text cleaning and preprocessing, such as removing stopwords, punctuation, and special characters.
 - Utilities for handling and transforming text data to prepare it for NLP models.
 - Examples demonstrating how to use these helper functions within other notebooks or scripts.
