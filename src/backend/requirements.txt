@@ -1,0 +1,9 @@
+flask
+flask_cors
+pandas
+spacy
+sentence_transformers
+torch
+gunicorn
+yfinance
+networkx
